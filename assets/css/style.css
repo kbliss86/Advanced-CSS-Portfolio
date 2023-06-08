@@ -3,3 +3,102 @@
     color: #a3591a;
 }
 
+.header {
+    
+    background-color: #075380;
+    border: 10px #075380;
+    border-radius: 7px 7px 0 0;
+    width: 90%;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header h1 {
+    display: inline-block;
+    margin-top: 30px; 
+    margin-left: 30px; 
+    background-color: #075380;
+    border-bottom:15px solid #428bfe;
+    border-radius: 7px 10px 7px 10px;
+    border-width: 100%;
+    font-weight: bolder;
+}
+
+.header nav {
+    padding-top: 15px;
+    width: 100%;
+    height: 50px;
+    float: right;
+    font-size: 20px;
+    background-color: #075380;
+    border: 10px #075380;
+    border-radius: 0 0 7px 7px;
+}
+
+.header nav ul {
+    list-style-type: none;
+    background-color: #075380;
+    border-radius: 0 0 7px 7px;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    background-color: #075380;
+}
+
+.header nav ul li a {
+    background-color: #075380;
+    font-weight:bold;
+    font-size: 90%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    height: 600px;
+    width: 100%;
+    background-image: url("/assets/images/Hacker-Gibson.png");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.card {
+    display: inline-flex;
+    align-items: center;
+    border:15px solid #075380;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.card h2 {
+    order: -1;
+    padding-right: 10px;
+}
+
+.card p {
+    margin-top: 5px;
+}
+
+.card h3 {
+    text-decoration: underline;
+    justify-self: center;
+}
+
+.arrow p {
+    font-size: 50px;
+    margin: 10px;
+}
+
+.smallcard {
+    border: 3px solid #35a582;
+    border-radius: 7px;
+    padding: 2px;
+
+}
+
