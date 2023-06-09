@@ -1,5 +1,6 @@
 * {
     background-color: #33cac1;
+    /* background-color: #428bfe; */
     color: #a3591a;
 }
 
@@ -12,6 +13,7 @@
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .header h1 {
@@ -54,6 +56,11 @@
     font-size: 90%;
 }
 
+.header nav ul li a:hover {
+    color: white;
+    letter-spacing: 2px;
+}
+
 a {
     text-decoration: none;
 }
@@ -61,28 +68,37 @@ a {
 .hero {
     height: 600px;
     width: 100%;
-    background-image: url("/assets/images/Hacker-Gibson.png");
+    background-image: url("../images/Hacker-Gibson.png");
     background-size: cover;
     background-position: center;
     margin-bottom: 10px;
 }
-
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .card {
     display: inline-flex;
+    flex-wrap: wrap;
     align-items: center;
     border:15px solid #075380;
     padding: 10px;
     margin: 10px;
     border-radius: 7px;
+    /* background-color: #428bfe; */
 }
 
 .card h2 {
     order: -1;
     padding-right: 10px;
+    text-decoration: underline;
+    font-size: 50px;
 }
 
 .card p {
     margin-top: 5px;
+    font-size: 18px;
 }
 
 .card h3 {
@@ -99,6 +115,118 @@ a {
     border: 3px solid #35a582;
     border-radius: 7px;
     padding: 2px;
+    height: 200px;
+    width: 200px;
+    /* max-width:15%; */
+    /* min-width: 15%; */
+    text-align: center;
+    margin: 10px;
 
 }
+
+.smallcard img {
+    width: 100%;
+    height: 90%;
+}
+
+.smallcard:hover {
+    box-shadow: 3px 3px 3px 3px #35a582;
+}
+
+#profile-pic {
+    position: relative;
+    display: inline-block;
+}
+
+#profile-pic .profile-tooltip {
+    position: absolute;
+    top: -10px;
+    /* bottom: %; */
+    left: 50%;
+    font-size: 75%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    text-decoration: solid;
+    color:#a3591a;
+    padding: 5px;
+    border-radius: 4px;
+    visibility: hidden;
+    transition: opacity 0.2, visibility 0.2s;
+}
+
+#profile-pic:hover .profile-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.smallcard::before{
+    content: "";
+}
+
+.showcase-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 15px solid #075380;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    width: 70%;
+}
+
+.showcase-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+
+}
+
+.showcase-card a {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.showcase-card h2 {
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.showcase-card p {
+    font-size: 30px;
+}
+
+#showcase-img {
+    position: relative;
+    display:inline-block;
+}
+
+#showcase-img .showcase-tooltip {
+    position: absolute;
+    top: -10px;
+    /* bottom: %; */
+    left: 50%;
+    font-size: 120%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    text-decoration: solid;
+    color:#a3591a;
+    padding: 5px;
+    border-radius: 4px;
+    visibility: hidden;
+    transition: opacity 0.2, visibility 0.2s;
+}
+
+#showcase-img:hover .showcase-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
 
