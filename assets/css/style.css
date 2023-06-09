@@ -68,7 +68,7 @@ a {
 .hero {
     height: 600px;
     width: 100%;
-    background-image: url("./images/Hacker-Gibson.png");
+    background-image: url("../images/Hacker-Gibson.png");
     background-size: cover;
     background-position: center;
     margin-bottom: 10px;
