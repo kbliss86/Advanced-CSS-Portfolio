@@ -73,11 +73,38 @@ a {
     background-position: center;
     margin-bottom: 10px;
 }
+
 .main {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.main .section {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
+
+.main .section1 {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main .section2 {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main .section2 {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .card {
     display: inline-flex;
     flex-wrap: wrap;
@@ -183,33 +210,57 @@ a {
     justify-content: center;
     padding: 2px;
     margin: 10px;
+    max-width: 100%;
 
 }
 
 .showcase-card a {
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
+.showcase-card a img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+}
 
 .showcase-card h2 {
+    display: flex;
     font-size: 50px;
     padding-bottom: 10px;
+    max-width: 100%;
 }
 
 .showcase-card p {
     font-size: 30px;
 }
 
+.showcase-card ul {
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    font-size: 30px;
+}
+
 #showcase-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     position: relative;
-    display:inline-block;
+    max-width: 100%;
 }
 
 #showcase-img .showcase-tooltip {
     position: absolute;
     top: -10px;
-    /* bottom: %; */
     left: 50%;
     font-size: 120%;
     transform: translateX(-50%);
@@ -227,6 +278,71 @@ a {
     opacity: 1;
 }
 
+#showcase1 {
+    width: 67%;
+    align-items: center;
+    justify-content: center;
+}
+
+#showcase2 {
+    width:33%;
+    align-items: center;
+    justify-content: center;
+}
+
+#showcase3 {
+    width:33%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#showcase3 a:hover {
+    color: white;
+    letter-spacing: 2px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .main .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main .section1 {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        .main .section2 {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .arrow p {
+        display: none;
+    } 
+
+    .showcase-card h2 {
+    display: flex;
+    font-size: 30px;
+    padding-bottom: 10px;
+    max-width: 100%;
+}
+
+.showcase-card p {
+    font-size: 15px;
+}  
+}
 
 
 
