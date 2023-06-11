@@ -1,9 +1,11 @@
+/* Backround and text colors  */
 * {
     background-color: #33cac1;
     /* background-color: #428bfe; */
     color: #a3591a;
 }
 
+/* header section  */
 .header {
     
     background-color: #075380;
@@ -16,6 +18,7 @@
     text-align: center;
 }
 
+/* header text  */
 .header h1 {
     display: inline-block;
     margin-top: 30px; 
@@ -27,6 +30,7 @@
     font-weight: bolder;
 }
 
+/* Navigation Section */
 .header nav {
     padding-top: 15px;
     width: 100%;
@@ -38,33 +42,39 @@
     border-radius: 0 0 7px 7px;
 }
 
+/* Navigation list  */
 .header nav ul {
     list-style-type: none;
     background-color: #075380;
     border-radius: 0 0 7px 7px;
 }
 
+/* navigation buttons */
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
     background-color: #075380;
 }
 
+/* Navigation buttons - based formating */
 .header nav ul li a {
     background-color: #075380;
     font-weight:bold;
     font-size: 90%;
 }
 
+/* Hover over psduedo elements for nav buttons */
 .header nav ul li a:hover {
     color: white;
     letter-spacing: 2px;
 }
 
+/* removes the line from under the links */
 a {
     text-decoration: none;
 }
 
+/* controls formating for hero class */
 .hero {
     height: 600px;
     width: 100%;
@@ -74,12 +84,14 @@ a {
     margin-bottom: 10px;
 }
 
+/* Main content block  */
 .main {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
 }
 
+/* makes the bio section flex and centered on screen  */
 .main .section {
     display: inline-flex;
     flex-direction: column;
@@ -87,24 +99,20 @@ a {
     align-items: center;
 }
 
+/* puts projects 1 and 2 in a row with flex  */
 .main .section1 {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
 }
-
+/* puts projects 3 4 and contact in a row */
 .main .section2 {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.main .section2 {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
+/* gives the biography class flex/wrap properties */
 .card {
     display: inline-flex;
     flex-wrap: wrap;
@@ -113,9 +121,9 @@ a {
     padding: 10px;
     margin: 10px;
     border-radius: 7px;
-    /* background-color: #428bfe; */
 }
 
+/* formats the header for bio class */
 .card h2 {
     order: -1;
     padding-right: 10px;
@@ -123,21 +131,25 @@ a {
     font-size: 50px;
 }
 
+/* formts the font insde bio class */
 .card p {
     margin-top: 5px;
     font-size: 18px;
 }
 
+/* controls the text for name under bio  */
 .card h3 {
     text-decoration: underline;
     justify-self: center;
 }
 
+/* changes the size of the arror between the smallcards in the bio  */
 .arrow p {
     font-size: 50px;
     margin: 10px;
 }
 
+/* formats the size of the small cards inside the bio class */
 .smallcard {
     border: 3px solid #35a582;
     border-radius: 7px;
@@ -151,20 +163,24 @@ a {
 
 }
 
+/* prevents image from being larger than the card its inside */
 .smallcard img {
     width: 100%;
     height: 90%;
 }
 
+/* makes the smallcards pop with a border shadow  */
 .smallcard:hover {
     box-shadow: 3px 3px 3px 3px #35a582;
 }
 
+/* needed for tooltip  */
 #profile-pic {
     position: relative;
     display: inline-block;
 }
 
+/* sets the tooltip element where it should be and the "translatex" will make it to the tooltop is properly centered */
 #profile-pic .profile-tooltip {
     position: absolute;
     top: -10px;
@@ -181,15 +197,18 @@ a {
     transition: opacity 0.2, visibility 0.2s;
 }
 
+/* shows the tooltip on mouse hover  */
 #profile-pic:hover .profile-tooltip {
     visibility: visible;
     opacity: 1;
 }
 
+/* makes the tooltip show nothing before  */
 .smallcard::before{
     content: "";
 }
 
+/* controls formating for the project sections and gives them flex properties and ensures they are in a column  and centers content */
 .showcase-section {
     display: flex;
     flex-direction: column;
@@ -202,6 +221,7 @@ a {
     width: 70%;
 }
 
+/* controls the formating for the individual project cards in each showcase section prevents section from getting larger than the parent section  and centers content */
 .showcase-card {
     display: flex;
     flex-direction: column;
@@ -214,12 +234,16 @@ a {
 
 }
 
+/* prevents the images/links from getting larger than there parent section  and centers content  */
 .showcase-card a {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    max-width: 100%;
 }
+
+/* prevents the image from being larger than the parent container and centers content  */
 .showcase-card a img {
     display: flex;
     align-items: center;
@@ -228,6 +252,7 @@ a {
     max-width: 100%;
 }
 
+/* prevents the image from being larger than the parent container  and centers content */
 .showcase-card h2 {
     display: flex;
     font-size: 50px;
@@ -235,10 +260,12 @@ a {
     max-width: 100%;
 }
 
+/* blows up the text for each project description  */
 .showcase-card p {
     font-size: 30px;
 }
 
+/* controls formating for the contact me section  */
 .showcase-card ul {
     list-style-type: none;
     flex-direction: column;
@@ -249,6 +276,7 @@ a {
     font-size: 30px;
 }
 
+/* prevents the images in the project section from becoming larger than thier parent containers  */
 #showcase-img {
     display: flex;
     align-items: center;
@@ -258,6 +286,7 @@ a {
     max-width: 100%;
 }
 
+/* creates tool tip box for each projects image/link  */
 #showcase-img .showcase-tooltip {
     position: absolute;
     top: -10px;
@@ -273,23 +302,27 @@ a {
     transition: opacity 0.2, visibility 0.2s;
 }
 
+/* makes the tool tip visible on mouse hover*/
 #showcase-img:hover .showcase-tooltip {
     visibility: visible;
     opacity: 1;
 }
 
+/* makes the "main project" bigger width  */
 #showcase1 {
     width: 67%;
     align-items: center;
     justify-content: center;
 }
 
+/* makes the second project a smaller width  */
 #showcase2 {
     width:33%;
     align-items: center;
     justify-content: center;
 }
 
+/* makes the minor projects and contact me sections only take a third of the screen  */
 #showcase3 {
     width:33%;
     align-items: center;
@@ -297,17 +330,19 @@ a {
 }
 
 
-
+/* makes the color and line spacing get adjusted to match the nav links in the header on mouse hover */
 #showcase3 a:hover {
     color: white;
     letter-spacing: 2px;
 }
 
+/* centers the footer  */
 footer p {
     text-align: center;
     font-size: 30px;
 }
 
+/* adjusts the settings for the HTML elements on resolutions lower than 768px (small smartphones) */
 @media screen and (max-width: 768px) {
     .main .section {
         display: flex;
@@ -330,18 +365,24 @@ footer p {
     
     .arrow p {
         display: none;
+    }
+    .showcase-card {
+        display: flex;
+        font-size: 25px;
+        padding-bottom: 10px;
+        max-width: 90%;
     } 
 
     .showcase-card h2 {
     display: flex;
-    font-size: 30px;
+    font-size: 20px;
     padding-bottom: 10px;
     max-width: 100%;
-}
+    }
 
-.showcase-card p {
+    .showcase-card p {
     font-size: 15px;
-}  
+    }  
 }
 
 
