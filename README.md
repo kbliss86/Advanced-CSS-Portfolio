@@ -1,7 +1,7 @@
 #Advanced CSS Portfolio for Kendall Bliss
 
 ## Screenshot
-![Website header and nav bar with "hero" section](https://github.com/kbliss86/bootcamp-challenge-01/blob/main/assets/images/Horiseon%20SC%20-01.PNG)
+![Website header and nav bar with "hero" section](https://github.com/kbliss86/Advanced-CSS-Portfolio/blob/main/assets/images/Webpage%20snapshot.PNG)
 
 ## Links
 
